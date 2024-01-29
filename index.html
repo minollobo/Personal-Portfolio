@@ -9,12 +9,14 @@
     <!--------- CSS ----------->
     <link rel="stylesheet" href="sass/style.css" />
 
+    <!----- Favicon ------>
     <link
       rel="shortcut icon"
       href="assets/images/favicon.svg"
       type="image/x-icon"
     />
 
+    <!--------- ICONS --------->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -23,39 +25,41 @@
       referrerpolicy="no-referrer"
     />
 
+    <!--------- FONTS --------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!--------- JS ------------>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body id="home">
+    <!------- Pre Loader -------->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
     <!------ Header ------>
     <header data-aos="fade-down">
+      <!------Site Logo ------>
       <div class="st-logo">
         <a href="index.html">
           <img src="assets/images/hero-logo2.png" />
         </a>
       </div>
 
+      <!------- Menu Nav ------->
       <nav class="main-nav">
         <ul class="nav-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <nav class="mobile-nav">
-        <ul class="mob-nav-menu">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -65,10 +69,34 @@
       </button>
     </header>
 
+    <!------- Mobile Nav ------->
+    <nav class="mobile-nav">
+      <ul class="mob-nav-menu">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <!-------- Home Page --------->
     <main>
       <!---- Hero Banner------->
       <section class="hero-banner">
+        <!-- BG Animations -->
+        <div class="circles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="st-hero">
           <div class="st-hero-info" data-aos="fade-right">
             <h3>Hello, I'm</h3>
@@ -80,6 +108,9 @@
                 an optimal user experience.
               </span>
             </div>
+            <button class="st-hire-btn btn">
+              <a href="#contact">Hire me</a>
+            </button>
           </div>
           <div class="st-hero-img" data-aos="fade-up">
             <img src="assets/images/picsart/hero-img.png" />
@@ -96,21 +127,38 @@
                 class="about-profile"
                 src="assets/images/picsart/Vector.jpg"
               />
+              <div class="html-float">
+                <img class="img-floater" src="assets/images/html-float.svg" />
+              </div>
+              <div class="css-float">
+                <img class="img-floater" src="assets/images/css-float.svg" />
+              </div>
+              <div class="js-float">
+                <img class="img-floater" src="assets/images/js-floater.svg" />
+              </div>
             </div>
 
             <div class="about-icons">
               <span class="icon-box"
-                ><i class="fa-brands fa-linkedin-in"></i
+                ><a
+                  href="https://www.linkedin.com/in/minol-lobo-362763114/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i></a
               ></span>
               <span class="icon-box"
-                ><i class="fa-brands fa-twitter"></i>
-              </span>
-
-              <span class="icon-box"
-                ><i class="fa-brands fa-instagram"></i
+                ><a href="https://twitter.com/home?lang=en" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i></a
               ></span>
 
-              <span class="icon-box"><i class="fa-brands fa-github"></i></span>
+              <span class="icon-box"
+                ><a href="https://www.instagram.com/minollobo/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i></a
+              ></span>
+
+              <span class="icon-box"
+                ><a href="https://github.com/minollobo" target="_blank"
+                  ><i class="fa-brands fa-github"></i></a
+              ></span>
             </div>
           </div>
 
@@ -127,6 +175,14 @@
               oriented person willing to learn more technologies to become a
               better developer than I was yesterday.
             </p>
+            <button class="btn">
+              <a
+                href="Minol-Lobo-Trained-Fresher-Full-Stack-Web-Developer.pdf"
+                download="Minol-Lobo-Full-Stack-Web-Developer"
+                target="_blank"
+                ><i class="fa-solid fa-download"></i>Download CV</a
+              >
+            </button>
           </div>
         </div>
       </section>
@@ -136,6 +192,7 @@
         <h2>My Skills</h2>
         <div class="st-skills-container">
           <div class="skills-tech" data-aos="fade-right">
+            <h4>SKILLS</h4>
             <ul>
               <li class="icons-html">
                 <img src="assets/images/icons/html-icon.svg" /><small
@@ -180,6 +237,202 @@
           <div class="skills-img" data-aos="fade-down">
             <img src="assets/images/picsart/skills-img.png" />
           </div>
+          <div class="skills-tools" data-aos="fade-left">
+            <h4>TOOLS</h4>
+            <ul>
+              <li class="icons-vs-code">
+                <img src="assets/images/icons/vs-code-icon.svg" /><small
+                  >VS CODE</small
+                >
+              </li>
+              <li class="icons-figma">
+                <img src="assets/images/icons/figma-icon.svg" /><small
+                  >FIGMA</small
+                >
+              </li>
+              <li class="icons-canva">
+                <img src="assets/images/icons/canva-icon.svg" /><small
+                  >CANVA</small
+                >
+              </li>
+              <li class="icons-github">
+                <img src="assets/images/icons/git-icon.svg" /><small
+                  >GITHUB</small
+                >
+              </li>
+              <li class="icons-zepline">
+                <img src="assets/images/icons/zeplin-icon.svg" /><small
+                  >ZEPLIN</small
+                >
+              </li>
+              <li class="icons-intellij">
+                <img src="assets/images/icons/intellij-icon.svg" /><small
+                  >INTELLIJ IDEA</small
+                >
+              </li>
+              <li class="icons-adobe-exp">
+                <img src="assets/images/icons/ad-exp-icon.svg" /><small
+                  >ADOBE EXPRESS</small
+                >
+              </li>
+              <li class="icons-adobe-ps">
+                <img src="assets/images/icons/ad-ps-icon.svg" /><small
+                  >ADOBE PHOTOSHOP</small
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--------- Projects---------->
+      <section class="st-projects" id="projects">
+        <h2>Projects I Have Worked On</h2>
+        <div class="st-projects-container" data-aos="zoom-in">
+          <!------ Project Box 1------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/portfolio-project.png" />
+            </div>
+            <div class="p1-info" id="p-info">
+              <h4>Responsive Personal Portfolio Website</h4>
+              <span>Concept | Design | Development</span>
+              <h5>Tools</h5>
+              <span class="project-tools"
+                ><b>HTML5, SASS, JavaScript, Figma, PHP</b></span
+              >
+              <p>
+                This website has been done using HTML5, CSS3, JavaScript & PHP.
+                A portfolio which exemplifies skills, qualifications, training,
+                and experiences. It provides insight into my personality and
+                work ethic.
+              </p>
+              <!-- <button class="btn">
+                <a href="https://minol.fswd.in/" target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button> -->
+            </div>
+          </div>
+
+          <!------ Project Box 2------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/gym-project.png" />
+            </div>
+            <div class="p1-info">
+              <h4>Responsive Gym Web Template</h4>
+              <span>Concept | Design | Development</span>
+              <h5>Tools</h5>
+              <span class="project-tools"
+                ><b>HTML5, CSS3, Figma, JavaScript</b></span
+              >
+              <p>
+                This project has been done using flex and grid. This template
+                helped me to learn and create responsive designs.
+              </p>
+              <button class="btn">
+                <a href="https://minol.fswd.in/apollo-gym/" target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!------ Project Box 3------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/ecommerce-project.png" />
+            </div>
+            <div class="p1-info">
+              <h4>Responsive Ecommerce Web Template</h4>
+              <span>Concept | Design | Development</span>
+              <h5>Tools</h5>
+              <span class="project-tools"
+                ><b>HTML5, CSS3, JavaScript, Figma</b></span
+              >
+              <p>
+                This project has been done using HTML5, CSS3 and JavaScript.
+                Helped me to learn and create sliders using DOM manipulation.
+              </p>
+              <button class="btn">
+                <a href="https://minol.fswd.in/ecommerce/" target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!------ Project Box 4------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/redrock-project.png" />
+            </div>
+            <div class="p1-info">
+              <h4>Zero Coding - Responsive Restaurant Web Template</h4>
+              <span>Adapting the design to my content</span>
+              <h5>Tools</h5>
+              <span class="project-tools"><b>Adobe Express, Figma</b></span>
+              <p>
+                This web template has been done by zero - coding prior to my
+                knowledge about coding. This project helped me to learn to use
+                design tools, basic layouts, HTML contents and CSS properties.
+              </p>
+              <button class="btn">
+                <a href="https://minol.fswd.in/red-rock/" target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!------ Project Box 5------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/temp-conv.png" />
+            </div>
+            <div class="p1-info" id="p-info-box">
+              <h4>Responsive Temperature Converter with Theme Switcher</h4>
+              <span>Concept | Design | Development</span>
+              <h5>Tools</h5>
+              <span class="project-tools"><b>HTML5, CSS3, JavaScript </b></span>
+              <p>
+                This project has been done using HTML5, CSS3 & JavaScript. It
+                helped me to learn and create using the basic DOM manipulation &
+                JS functions.
+              </p>
+              <button class="btn">
+                <a
+                  href="https://minol.fswd.in/temperature-converter/"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!------ Project Box 6------->
+          <div class="project-box">
+            <div class="p1-img">
+              <img src="assets/images/projects/youtube-project.png" />
+            </div>
+            <div class="p1-info">
+              <h4>Responsive YouTube Clone Web Template</h4>
+              <span>Concept | Development</span>
+              <h5>Tools</h5>
+              <span class="project-tools"><b>HTML5, CSS3, Figma</b></span>
+              <p>
+                This web template has been done using flex and grid. Created the
+                sidebar and create links using anchor tag. Helped me to learn
+                CSS flex and grid properties.
+              </p>
+              <button class="btn">
+                <a href="https://minol.fswd.in/youtube-clone/" target="_blank"
+                  ><i class="fa-solid fa-link"></i>SEE IT LIVE</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -192,7 +445,7 @@
           <!---- CONTACT FORM ----->
           <div class="form-grid" data-aos="fade-right">
             <h3>GET IN TOUCH</h3>
-            <form>
+            <form action="mail.php" method="post">
               <div class="form-group">
                 <input
                   type="text"
@@ -252,6 +505,35 @@
                   <span>Jeppu, Mangaluru, DK, Karnataka - 575002.</span>
                 </div>
               </div>
+              <div class="social-info">
+                <p>Visit my social profile and get connected</p>
+                <div class="social-icons">
+                  <span class="social-box"
+                    ><a
+                      href="https://www.linkedin.com/in/minol-lobo-362763114/"
+                      target="_blank"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin-in"></i></a
+                  ></span>
+
+                  <span class="social-box"
+                    ><a href="https://twitter.com/home?lang=en" target="_blank"
+                      ><i class="fa-brands fa-twitter"></i></a
+                  ></span>
+
+                  <span class="social-box"
+                    ><a
+                      href="https://www.instagram.com/minollobo/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i></a
+                  ></span>
+
+                  <span class="social-box"
+                    ><a href="https://github.com/minollobo" target="_blank"
+                      ><i class="fa-brands fa-github"></i></a
+                  ></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -270,5 +552,24 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/script.js"></script>
+
+    <!---- Slider ---->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+
+    <!---- Loader ---->
+    <script>
+      var loading = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loading.style.display = "none";
+      });
+    </script>
   </body>
 </html>
