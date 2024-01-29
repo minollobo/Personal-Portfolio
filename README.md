@@ -8,6 +8,6 @@ I am a passionate front-end developer with a love for creating visually appealin
 
 ## Portfolio URL
 
-Visit my portfolio at [Your Portfolio URL](https://minollobo.github.io/Personal-Portfolio/).
+Visit my portfolio at [Portfolio URL](https://minollobo.github.io/Personal-Portfolio/).
 
 
